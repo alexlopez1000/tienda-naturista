@@ -5,13 +5,11 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ .Title }}</title>
 
-    <link rel="stylesheet"
-          href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
@@ -28,12 +26,35 @@
 
     {{ partial "footer.html" . }}
 
+    <!-- Estructura del Carrito de Compras -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Los productos se agregarán aquí dinámicamente -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$ 0 COP</span>
+            </div>
+            <button class="btn-checkout" onclick="checkoutCart()">
+                Realizar Pedido por WhatsApp
+            </button>
+        </div>
+    </div>
+
     <script>
-    function toggleMenu() {
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("show");
-    }
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
     </script>
+
+    <script src="/js/cart.js"></script>
 
 </body>
 

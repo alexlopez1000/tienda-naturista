@@ -565,3 +565,339 @@ header{
 .paginacion a:hover{
     background:#1b5e20;
 }
+
+/* ==========================================
+   CARRITO DE COMPRAS - ESTILOS
+   ========================================== */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-toggle {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cart-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.cart-toggle span {
+    background: #4caf50;
+    color: white;
+    border-radius: 50%;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+/* Overlay */
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cart-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Drawer */
+.cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 400px;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-drawer.active {
+    right: 0;
+}
+
+@media (max-width: 480px) {
+    .cart-drawer {
+        width: 100%;
+        right: -100%;
+    }
+}
+
+/* Header Drawer */
+.cart-header {
+    padding: 20px;
+    background: #2e7d32;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1b5e20;
+}
+
+.cart-header h2 {
+    margin: 0 !important;
+    font-size: 20px;
+    color: white !important;
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    line-height: 1;
+}
+
+.close-cart:hover {
+    transform: scale(1.2);
+}
+
+/* Item List */
+.cart-items {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8f5e9;
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e8f5e9;
+}
+
+.cart-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cart-item-title {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+}
+
+.cart-item-price {
+    color: #2e7d32;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cart-item-qty-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.cart-qty-btn {
+    background: #e8f5e9;
+    border: none;
+    color: #2e7d32;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.cart-qty-btn:hover {
+    background: #c8e6c9;
+}
+
+.cart-qty-btn:active {
+    transform: scale(0.9);
+}
+
+.cart-qty-val {
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 15px;
+    text-align: center;
+}
+
+.cart-item-remove {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    transition: color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item-remove:hover {
+    color: #c62828;
+    transform: scale(1.15);
+}
+
+/* Footer Drawer */
+.cart-footer {
+    padding: 20px;
+    border-top: 1px solid #e8f5e9;
+    background: #f5fff5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-total-amount {
+    color: #2e7d32;
+    font-size: 20px;
+}
+
+.btn-checkout {
+    width: 100%;
+    padding: 14px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+.btn-checkout:hover {
+    background: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.empty-cart-msg {
+    text-align: center;
+    color: #888;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+/* Botón agregar al carrito en catálogo */
+.btn-agregar-carrito {
+    display: block;
+    margin: 0 15px 15px 15px;
+    padding: 12px;
+    width: calc(100% - 30px);
+    text-align: center;
+    border: 2px solid #4caf50;
+    background: transparent;
+    color: #4caf50;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-agregar-carrito:hover {
+    background: #4caf50;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-agregar-carrito:active {
+    transform: translateY(0);
+}
+
+/* Estilos de botones lado a lado en detalle de producto */
+.acciones-producto {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.acciones-producto .btn {
+    margin-top: 0;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.btn-agregar-single {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 16px;
+    transition: all 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-agregar-single:hover {
+    background: #1b5e20;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}

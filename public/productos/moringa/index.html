@@ -5,13 +5,11 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Moringa</title>
 
-    <link rel="stylesheet"
-          href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
@@ -23,24 +21,31 @@
         🌿 Vida Sana
     </div>
 
-    <button class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </button>
+    <div class="header-right">
 
-    <nav id="menu">
+        <nav id="menu">
 
-        <a href="/">Inicio</a>
+            <a href="/">Inicio</a>
 
-        <a href="/productos/">Productos</a>
+            <a href="/productos/">Productos</a>
 
-        <a href="/nosotros/">Quiénes Somos</a>
+            <a href="/nosotros/">Quiénes Somos</a>
 
-        <a href="/contacto/">Contacto</a>
+            <a href="/contacto/">Contacto</a>
 
-    </nav>
+        </nav>
+
+        <button class="cart-toggle" onclick="toggleCart()" title="Ver carrito">
+            🛒 <span id="cart-count">0</span>
+        </button>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </div>
 
 </header>
-
 
     <main>
 
@@ -48,18 +53,18 @@
 
 <div class="container">
 
-    <a class="volver" href="/">
-        ← Volver al inicio
+    
+    <a class="volver" href="/productos/">
+        ← Volver a productos
     </a>
+    
 
-   <div class="producto-detalle">
+    <div class="producto-detalle">
 
         <h1>Moringa</h1>
 
         
-        <img class="imagen"
-             src="/images/moringa.jpg"
-             alt="Moringa">
+        <img class="imagen" src="/images/moringa.jpg" alt="Moringa">
         
 
         
@@ -76,7 +81,7 @@
 
         <hr>
 
-       <div class="contenido-producto">
+        <div class="contenido-producto">
             <p>La moringa es una planta rica en vitaminas, minerales y antioxidantes.</p>
 <p>Beneficios:</p>
 <ul>
@@ -87,14 +92,11 @@
 
         </div>
 
-        <a
-        class="btn"
-        href="https://wa.me/573146865924?text=Hola,%20quiero%20comprar%20Moringa"
-        target="_blank">
-
-        Comprar por WhatsApp
-
-        </a>
+        <div class="acciones-producto">
+            <button class="btn-agregar-single" data-id="/productos/moringa/" data-title="Moringa" data-price="35000" data-image="/images/moringa.jpg">
+                Agregar al Carrito
+            </button>
+        </div>
 
     </div>
 
@@ -117,6 +119,36 @@
     <p>© 2026 Vida Sana</p>
 
 </footer>
+
+    
+    <div id="cart-overlay" class="cart-overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$ 0 COP</span>
+            </div>
+            <button class="btn-checkout" onclick="checkoutCart()">
+                Realizar Pedido por WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+
+    <script src="/js/cart.js"></script>
 
 </body>
 

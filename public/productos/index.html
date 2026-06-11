@@ -5,13 +5,11 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Productos</title>
 
-    <link rel="stylesheet"
-          href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
@@ -23,24 +21,31 @@
         🌿 Vida Sana
     </div>
 
-    <button class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </button>
+    <div class="header-right">
 
-    <nav id="menu">
+        <nav id="menu">
 
-        <a href="/">Inicio</a>
+            <a href="/">Inicio</a>
 
-        <a href="/productos/">Productos</a>
+            <a href="/productos/">Productos</a>
 
-        <a href="/nosotros/">Quiénes Somos</a>
+            <a href="/nosotros/">Quiénes Somos</a>
 
-        <a href="/contacto/">Contacto</a>
+            <a href="/contacto/">Contacto</a>
 
-    </nav>
+        </nav>
+
+        <button class="cart-toggle" onclick="toggleCart()" title="Ver carrito">
+            🛒 <span id="cart-count">0</span>
+        </button>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </div>
 
 </header>
-
 
     <main>
 
@@ -84,6 +89,10 @@
                     Ver detalle
                 </a>
 
+                <button class="btn-agregar-carrito" data-id="/productos/colageno/" data-title="Colágeno" data-price="55000" data-image="/images/colageno.jpg">
+                    Agregar al carrito
+                </button>
+
             </div>
 
         </div>
@@ -115,6 +124,10 @@
                 <a href="/productos/moringa/" class="btn-comprar">
                     Ver detalle
                 </a>
+
+                <button class="btn-agregar-carrito" data-id="/productos/moringa/" data-title="Moringa" data-price="35000" data-image="/images/moringa.jpg">
+                    Agregar al carrito
+                </button>
 
             </div>
 
@@ -148,6 +161,10 @@
                     Ver detalle
                 </a>
 
+                <button class="btn-agregar-carrito" data-id="/productos/omega3/" data-title="Omega 3" data-price="45000" data-image="/images/omega3.jpg">
+                    Agregar al carrito
+                </button>
+
             </div>
 
         </div>
@@ -179,6 +196,10 @@
                 <a href="/productos/teverde/" class="btn-comprar">
                     Ver detalle
                 </a>
+
+                <button class="btn-agregar-carrito" data-id="/productos/teverde/" data-title="Té Verde" data-price="25000" data-image="/images/teverde.jpg">
+                    Agregar al carrito
+                </button>
 
             </div>
 
@@ -216,12 +237,35 @@
 
 </footer>
 
+    
+    <div id="cart-overlay" class="cart-overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$ 0 COP</span>
+            </div>
+            <button class="btn-checkout" onclick="checkoutCart()">
+                Realizar Pedido por WhatsApp
+            </button>
+        </div>
+    </div>
+
     <script>
-    function toggleMenu() {
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("show");
-    }
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
     </script>
+
+    <script src="/js/cart.js"></script>
 
 </body>
 

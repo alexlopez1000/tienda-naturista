@@ -8,14 +8,12 @@
     </a>
     {{ end }}
 
-   <div class="producto-detalle">
+    <div class="producto-detalle">
 
         <h1>{{ .Title }}</h1>
 
         {{ if .Params.image }}
-        <img class="imagen"
-             src="{{ .Params.image }}"
-             alt="{{ .Title }}">
+        <img class="imagen" src="{{ .Params.image }}" alt="{{ .Title }}">
         {{ end }}
 
         {{ if .Params.price }}
@@ -32,22 +30,18 @@
 
         <hr>
 
-       <div class="contenido-producto">
+        <div class="contenido-producto">
             {{ .Content }}
         </div>
 
-        <a
-        class="btn"
-        href="https://wa.me/573146865924?text=Hola,%20quiero%20comprar%20{{ .Title }}"
-        target="_blank">
-
-        Comprar por WhatsApp
-
-        </a>
+        <div class="acciones-producto">
+            <button class="btn-agregar-single" data-id="{{ .RelPermalink }}" data-title="{{ .Title }}" data-price="{{ .Params.price }}" data-image="{{ .Params.image }}">
+                Agregar al Carrito
+            </button>
+        </div>
 
     </div>
 
 </div>
 
 {{ end }}
-
