@@ -1,0 +1,154 @@
+{{ define "main" }}
+
+<section class="hero" id="inicio">
+
+    <div class="hero-text">
+
+        <h1>
+            Tu bienestar comienza de forma natural
+        </h1>
+
+        <p>
+            Suplementos, vitaminas y productos orgánicos
+            seleccionados para mejorar tu calidad de vida.
+        </p>
+
+        <a href="#productos" class="btn-comprar">
+            Ver Productos
+        </a>
+
+    </div>
+
+</section>
+
+<section id="productos">
+
+    <h2>Nuestros Productos</h2>
+
+    <div class="productos">
+
+        {{ range first 4 (where site.RegularPages "Section" "productos") }}
+
+        <div class="card">
+
+            <a href="{{ .RelPermalink }}">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}">
+            </a>
+
+            <div class="contenido">
+
+                <h3>
+                   <a href="{{ .RelPermalink }}">
+                       {{ .Title }}
+                   </a>
+                </h3>
+
+                <p class="precio-catalogo">
+                    $ {{ .Params.price }} COP
+                </p>
+
+                <p>
+                    {{ .Params.description }}
+                </p>
+
+                <a href="{{ .RelPermalink }}" class="btn-comprar">
+                    Ver detalle
+                </a>
+
+            </div>
+
+        </div>
+
+        {{ end }}
+
+    </div>
+
+</section>
+<section class="beneficios">
+
+    <h2>¿Por qué elegir Vida Sana?</h2>
+
+    <div class="beneficios-grid">
+
+        <div>
+            🌿 Productos Naturales
+        </div>
+
+        <div>
+            🚚 Entregas Rápidas
+        </div>
+
+        <div>
+            💚 Atención Personalizada
+        </div>
+
+        <div>
+            ⭐ Calidad Garantizada
+        </div>
+
+    </div>
+
+</section>
+
+<section class="nosotros" id="nosotros">
+
+    <h2>Quiénes Somos</h2>
+
+    <p>
+        Somos una tienda naturista comprometida con la salud,
+        ofreciendo productos naturales de alta calidad para
+        mejorar el bienestar de nuestros clientes.
+    </p>
+
+</section>
+
+<section class="testimonios">
+
+    <h2>Lo que dicen nuestros clientes</h2>
+
+    <div class="testimonio">
+
+        ⭐⭐⭐⭐⭐
+
+        Excelente servicio y productos de calidad.
+
+        - María Gómez
+
+    </div>
+
+    <div class="testimonio">
+
+        ⭐⭐⭐⭐⭐
+
+        Mi familia consume estos productos hace meses.
+
+        - Carlos Pérez
+
+    </div>
+
+</section>
+
+<section class="contacto" id="contacto">
+
+    <h2>Contacto</h2>
+
+    <p>📍 Popayán, Cauca</p>
+
+    <p>📞 3146865924</p>
+
+    <p>✉ contacto@vidasana.com</p>
+
+</section>
+
+<a href="https://wa.me/573146865924" class="whatsapp">
+    💬
+</a>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+}
+</script>
+
+{{ end }}

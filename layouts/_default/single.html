@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<div class="container">
+
+    <a class="volver" href="/">
+        ← Volver al inicio
+    </a>
+
+   <div class="producto-detalle">
+
+        <h1>{{ .Title }}</h1>
+
+        {{ if .Params.image }}
+        <img class="imagen"
+             src="{{ .Params.image }}"
+             alt="{{ .Title }}">
+        {{ end }}
+
+        {{ if .Params.price }}
+        <div class="precio">
+            $ {{ .Params.price }} COP
+        </div>
+        {{ end }}
+
+        {{ if .Params.description }}
+        <p>
+            {{ .Params.description }}
+        </p>
+        {{ end }}
+
+        <hr>
+
+       <div class="contenido-producto">
+            {{ .Content }}
+        </div>
+
+        <a
+        class="btn"
+        href="https://wa.me/573146865924?text=Hola,%20quiero%20comprar%20{{ .Title }}"
+        target="_blank">
+
+        Comprar por WhatsApp
+
+        </a>
+
+    </div>
+
+</div>
+
+{{ end }}
+

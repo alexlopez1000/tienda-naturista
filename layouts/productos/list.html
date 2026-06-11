@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+<div class="container">
+
+    <h1 class="titulo-catalogo">
+        {{ .Title }}
+    </h1>
+
+    {{ $paginator := .Paginate .Pages 10 }}
+
+    <div class="productos">
+
+        {{ range $paginator.Pages }}
+
+        <div class="card">
+
+            <a href="{{ .RelPermalink }}">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+            </a>
+
+            <div class="contenido">
+
+                <h2>
+                    <a href="{{ .RelPermalink }}">
+                        {{ .Title }}
+                    </a>
+                </h2>
+
+                <p class="precio-catalogo">
+                    $ {{ .Params.price }} COP
+                </p>
+
+                <p>
+                    {{ .Params.description }}
+                </p>
+
+                <a href="{{ .RelPermalink }}" class="btn-comprar">
+                    Ver detalle
+                </a>
+
+            </div>
+
+        </div>
+
+        {{ end }}
+
+    </div>
+
+    <div class="paginacion">
+
+        {{ if $paginator.HasPrev }}
+
+        <a href="{{ $paginator.Prev.URL }}">
+            ← Anterior
+        </a>
+
+        {{ end }}
+
+        {{ if $paginator.HasNext }}
+
+        <a href="{{ $paginator.Next.URL }}">
+            Siguiente →
+        </a>
+
+        {{ end }}
+
+    </div>
+
+</div>
+
+{{ end }}
