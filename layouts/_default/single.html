@@ -2,9 +2,11 @@
 
 <div class="container">
 
-    <a class="volver" href="/">
-        ← Volver al inicio
+    {{ if eq .Section "productos" }}
+    <a class="volver" href="/productos/">
+        ← Volver a productos
     </a>
+    {{ end }}
 
    <div class="producto-detalle">
 
