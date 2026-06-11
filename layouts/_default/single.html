@@ -34,10 +34,16 @@
             {{ .Content }}
         </div>
 
-        <div class="acciones-producto">
+        <div class="acciones-producto acciones-{{ .File.BaseFileName }}">
+            {{ if eq .Section "productos" }}
             <button class="btn-agregar-single" data-id="{{ .RelPermalink }}" data-title="{{ .Title }}" data-price="{{ .Params.price }}" data-image="{{ .Params.image }}">
                 Agregar al Carrito
             </button>
+            {{ else }}
+            <a class="btn btn-contacto-whatsapp" href="https://wa.me/573146865924?text={{ urlquery "Hola, necesito información" }}" target="_blank" rel="noopener noreferrer">
+                Contactanos al Whatsapp
+            </a>
+            {{ end }}
         </div>
 
     </div>
