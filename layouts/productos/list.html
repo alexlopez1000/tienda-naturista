@@ -6,7 +6,7 @@
         {{ .Title }}
     </h1>
 
-    {{ $paginator := .Paginate .Pages 10 }}
+    {{ $paginator := .Paginate .Pages 2 }}
 
     <div class="productos">
 
@@ -50,25 +50,58 @@
 
     </div>
 
+    {{ if gt $paginator.TotalPages 1 }}
+
+    {{ $currentPage := $paginator.PageNumber }}
+    {{ $totalPages := $paginator.TotalPages }}
+    {{ $startPage := sub $currentPage 2 }}
+    {{ if lt $startPage 1 }}
+        {{ $startPage = 1 }}
+    {{ end }}
+    {{ $endPage := add $startPage 4 }}
+    {{ if gt $endPage $totalPages }}
+        {{ $endPage = $totalPages }}
+        {{ $startPage = sub $endPage 4 }}
+        {{ if lt $startPage 1 }}
+            {{ $startPage = 1 }}
+        {{ end }}
+    {{ end }}
+
     <div class="paginacion">
 
-        {{ if $paginator.HasPrev }}
-
-        <a href="{{ $paginator.Prev.URL }}">
-            ← Anterior
+        <a href="{{ $paginator.First.URL }}" aria-label="Pagina inicial">
+            &lt;&lt;
         </a>
+
+        {{ range $paginator.Pagers }}
+
+            {{ if and (ge .PageNumber $startPage) (le .PageNumber $endPage) }}
+
+                {{ if eq .PageNumber $currentPage }}
+
+        <span class="pagina-actual">
+            {{ .PageNumber }}
+        </span>
+
+                {{ else }}
+
+        <a href="{{ .URL }}">
+            {{ .PageNumber }}
+        </a>
+
+                {{ end }}
+
+            {{ end }}
 
         {{ end }}
 
-        {{ if $paginator.HasNext }}
-
-        <a href="{{ $paginator.Next.URL }}">
-            Siguiente →
+        <a href="{{ $paginator.Last.URL }}" aria-label="Pagina final">
+            &gt;&gt;
         </a>
-
-        {{ end }}
 
     </div>
+
+    {{ end }}
 
 </div>
 

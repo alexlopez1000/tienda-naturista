@@ -5,4 +5,4 @@ title = 'Tienda Naturista Vida Sana'
 [params]
 empresa = 'Vida Sana'
 
-pagination.pagerSize = 10
+pagination.pagerSize = 2

@@ -553,13 +553,20 @@ header{
 .paginacion{
     display:flex;
     justify-content:center;
+    flex-wrap:wrap;
     gap:20px;
     margin:50px 0;
 }
 
-.paginacion a{
+.paginacion a,
+.paginacion .pagina-actual{
     background:#2e7d32;
     color:white;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:44px;
+    min-height:44px;
     text-decoration:none;
     padding:12px 20px;
     border-radius:8px;
@@ -569,6 +576,12 @@ header{
 
 .paginacion a:hover{
     background:#1b5e20;
+}
+
+.paginacion .pagina-actual{
+    background:#0f3d14;
+    border:2px solid #a5d6a7;
+    cursor:default;
 }
 
 /* ==========================================

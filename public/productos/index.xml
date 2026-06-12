@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Productos on Tienda Naturista Vida Sana</title>
-		<link>http://192.168.0.7:1313/productos/</link>
+		<link>http://192.168.0.4:1313/productos/</link>
 		<description>Recent content in Productos on Tienda Naturista Vida Sana</description>
 		<generator>Hugo</generator>
 		<language>es-co</language>
@@ -10,33 +10,33 @@
 		
 		
 		
-			<atom:link href="http://192.168.0.7:1313/productos/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://192.168.0.4:1313/productos/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Colágeno</title>
-				<link>http://192.168.0.7:1313/productos/colageno/</link>
+				<link>http://192.168.0.4:1313/productos/colageno/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://192.168.0.7:1313/productos/colageno/</guid>
+				<guid>http://192.168.0.4:1313/productos/colageno/</guid>
 				<description>&lt;p&gt;El colágeno ayuda a mantener la elasticidad de la piel.&lt;/p&gt;&#xA;&lt;p&gt;Beneficios:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Salud articular&lt;/li&gt;&#xA;&lt;li&gt;Cabello&lt;/li&gt;&#xA;&lt;li&gt;Uñas&lt;/li&gt;&#xA;&lt;li&gt;Piel&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 			<item>
 				<title>Moringa</title>
-				<link>http://192.168.0.7:1313/productos/moringa/</link>
+				<link>http://192.168.0.4:1313/productos/moringa/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://192.168.0.7:1313/productos/moringa/</guid>
+				<guid>http://192.168.0.4:1313/productos/moringa/</guid>
 				<description>&lt;p&gt;La moringa es una planta rica en vitaminas, minerales y antioxidantes.&lt;/p&gt;&#xA;&lt;p&gt;Beneficios:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fortalece el sistema inmunológico&lt;/li&gt;&#xA;&lt;li&gt;Aporta energía&lt;/li&gt;&#xA;&lt;li&gt;Rica en nutrientes&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 			<item>
 				<title>Omega 3</title>
-				<link>http://192.168.0.7:1313/productos/omega3/</link>
+				<link>http://192.168.0.4:1313/productos/omega3/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://192.168.0.7:1313/productos/omega3/</guid>
+				<guid>http://192.168.0.4:1313/productos/omega3/</guid>
 				<description>&lt;p&gt;El Omega 3 contribuye al funcionamiento normal del corazón.&lt;/p&gt;&#xA;&lt;p&gt;Beneficios:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Salud cardiovascular&lt;/li&gt;&#xA;&lt;li&gt;Salud cerebral&lt;/li&gt;&#xA;&lt;li&gt;Antiinflamatorio natural&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 			<item>
 				<title>Té Verde</title>
-				<link>http://192.168.0.7:1313/productos/teverde/</link>
+				<link>http://192.168.0.4:1313/productos/teverde/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://192.168.0.7:1313/productos/teverde/</guid>
+				<guid>http://192.168.0.4:1313/productos/teverde/</guid>
 				<description>&lt;p&gt;El té verde es conocido por sus propiedades antioxidantes.&lt;/p&gt;&#xA;&lt;p&gt;Beneficios:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Antioxidante&lt;/li&gt;&#xA;&lt;li&gt;Energía natural&lt;/li&gt;&#xA;&lt;li&gt;Apoyo metabólico&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 	</channel>

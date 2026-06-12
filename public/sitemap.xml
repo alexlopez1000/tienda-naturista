@@ -3,24 +3,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.0.7:1313/categories/</loc>
+    <loc>http://192.168.0.4:1313/categories/</loc>
   </url><url>
-    <loc>http://192.168.0.7:1313/productos/colageno/</loc>
+    <loc>http://192.168.0.4:1313/productos/colageno/</loc>
   </url><url>
-    <loc>http://192.168.0.7:1313/contacto/</loc>
+    <loc>http://192.168.0.4:1313/contacto/</loc>
   </url><url>
-    <loc>http://192.168.0.7:1313/</loc>
+    <loc>http://192.168.0.4:1313/</loc>
   </url><url>
-    <loc>http://192.168.0.7:1313/productos/moringa/</loc>
+    <loc>http://192.168.0.4:1313/productos/moringa/</loc>
   </url><url>
-    <loc>http://192.168.0.7:1313/productos/omega3/</loc>
+    <loc>http://192.168.0.4:1313/productos/omega3/</loc>
   </url><url>
-    <loc>http://192.168.0.7:1313/productos/</loc>
+    <loc>http://192.168.0.4:1313/productos/</loc>
   </url><url>
-    <loc>http://192.168.0.7:1313/nosotros/</loc>
+    <loc>http://192.168.0.4:1313/nosotros/</loc>
   </url><url>
-    <loc>http://192.168.0.7:1313/tags/</loc>
+    <loc>http://192.168.0.4:1313/tags/</loc>
   </url><url>
-    <loc>http://192.168.0.7:1313/productos/teverde/</loc>
+    <loc>http://192.168.0.4:1313/productos/teverde/</loc>
   </url>
 </urlset>
