@@ -1,0 +1,14 @@
+{{- $price := int . -}}
+{{- if ge $price 1000000 -}}
+    {{- $millions := div $price 1000000 -}}
+    {{- $remainder := mod $price 1000000 -}}
+    {{- $thousands := div $remainder 1000 -}}
+    {{- $units := mod $remainder 1000 -}}
+    {{- printf "$ %d.%03d.%03d COP" $millions $thousands $units -}}
+{{- else if ge $price 1000 -}}
+    {{- $thousands := div $price 1000 -}}
+    {{- $units := mod $price 1000 -}}
+    {{- printf "$ %d.%03d COP" $thousands $units -}}
+{{- else -}}
+    {{- printf "$ %d COP" $price -}}
+{{- end -}}

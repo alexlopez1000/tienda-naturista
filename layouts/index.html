@@ -38,13 +38,11 @@
             <div class="contenido">
 
                 <h3>
-                    <a href="{{ .RelPermalink }}">
-                        {{ .Title }}
-                    </a>
+                    {{ .Title }}
                 </h3>
 
                 <p class="precio-catalogo">
-                    $ {{ .Params.price }} COP
+                    {{ partial "format-price.html" .Params.price }}
                 </p>
 
                 <p>

@@ -15,17 +15,22 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 60px;
+    padding:20px 60px 20px 20px;
 }
 
 .logo{
-    font-size:28px;
-    font-weight:bold;
+    display:block;
+    width:260px;
+    height:74px;
+    object-fit:cover;
+    object-position:center;
 }
 
 .logo-link{
     color:inherit;
     text-decoration:none;
+    display:flex;
+    align-items:center;
 }
 
 nav a{
@@ -366,7 +371,12 @@ header{
 
     header{
         flex-direction:row;
-        padding:15px 20px;
+        padding:12px 20px 12px 10px;
+    }
+
+    .logo{
+        width:190px;
+        height:58px;
     }
 
     .menu-toggle{
@@ -432,7 +442,23 @@ header{
     text-align:center;
     color:#2e7d32;
     font-size:42px;
+    line-height:1.2;
     margin-bottom:30px;
+}
+
+@media(max-width:768px){
+
+    .producto-detalle h1{
+        font-size:32px;
+    }
+}
+
+@media(max-width:480px){
+
+    .producto-detalle h1{
+        font-size:26px;
+        margin-bottom:22px;
+    }
 }
 
 .imagen{
@@ -556,6 +582,7 @@ header{
     flex-wrap:wrap;
     gap:20px;
     margin:50px 0;
+    max-width:100%;
 }
 
 .paginacion a,
@@ -582,6 +609,23 @@ header{
     background:#0f3d14;
     border:2px solid #a5d6a7;
     cursor:default;
+}
+
+@media(max-width:480px){
+
+    .paginacion{
+        gap:8px;
+        margin:35px auto;
+        padding:0 4px;
+    }
+
+    .paginacion a,
+    .paginacion .pagina-actual{
+        min-width:38px;
+        min-height:38px;
+        padding:8px 10px;
+        font-size:14px;
+    }
 }
 
 /* ==========================================

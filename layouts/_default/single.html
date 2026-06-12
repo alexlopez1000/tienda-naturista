@@ -18,7 +18,7 @@
 
         {{ if .Params.price }}
         <div class="precio">
-            $ {{ .Params.price }} COP
+            {{ partial "format-price.html" .Params.price }}
         </div>
         {{ end }}
 
