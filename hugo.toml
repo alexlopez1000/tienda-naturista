@@ -4,5 +4,6 @@ title = 'Tienda Naturista Vida Sana'
 
 [params]
 empresa = 'Vida Sana'
+enableDynamicBg = true
 
 pagination.pagerSize = 2

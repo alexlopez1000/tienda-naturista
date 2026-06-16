@@ -4,18 +4,38 @@
     box-sizing:border-box;
 }
 
+/* Canvas de fondo dinámico WebGL */
+#dynamic-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    pointer-events: none;
+}
+
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5fff5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #03050c;
+    color: #e2e8f0;
+    overflow-x: hidden;
 }
 
 header{
-    background:#2e7d32;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px 20px 20px;
+    background: rgba(5, 8, 17, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 20px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: background 0.3s;
 }
 
 .logo{
@@ -47,8 +67,8 @@ nav a{
     align-items:center;
     text-align:center;
     background:linear-gradient(
-        rgba(0,0,0,.4),
-        rgba(0,0,0,.4)
+        rgba(5, 8, 17, 0.4),
+        rgba(5, 8, 17, 0.85)
     ),
     url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
     background-size:cover;
@@ -82,7 +102,9 @@ nav a{
 #productos h2{
     text-align:center;
     margin-bottom:40px;
-    color:#2e7d32;
+    color: #e2e8f0;
+    font-size: 36px;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
 }
 
 .productos{
@@ -92,16 +114,21 @@ nav a{
 }
 
 .card{
-    background:white;
-    border-radius:16px;
-    overflow:hidden;
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
-    transition:all .3s ease;
+    background: rgba(15, 23, 42, 0.45);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #e2e8f0;
 }
 
 .card:hover{
     transform:translateY(-8px);
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    box-shadow: 0 12px 30px rgba(0, 240, 255, 0.15);
+    border-color: rgba(0, 240, 255, 0.3);
 }
 
 .card img{
@@ -121,6 +148,7 @@ nav a{
 
 .card p{
     padding:0 15px 15px;
+    color: #94a3b8;
 }
 
 .card button{
@@ -128,24 +156,32 @@ nav a{
     width:calc(100% - 30px);
     padding:12px;
     border:none;
-    background:#4caf50;
+    background:#10b981;
     color:white;
     border-radius:8px;
     cursor:pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card button:hover{
+    background: #059669;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
 }
 
 .nosotros,
 .contacto{
-    padding:60px 40px;
+    padding:80px 40px;
     text-align:center;
+    color: #e2e8f0;
 }
 
 .nosotros{
-    background:white;
+    background: transparent;
 }
 
 .contacto{
-    background:#e8f5e9;
+    background: transparent;
 }
 
 footer{
@@ -197,8 +233,9 @@ footer{
 }  
 
 .card strong{
-    color:#2e7d32;
+    color: #00f0ff;
     font-size:22px;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.2);
 }
 
 /* BOTONES DE COMPRA */
@@ -209,7 +246,7 @@ footer{
     padding:12px;
     text-align:center;
     text-decoration:none;
-    background:#4caf50;
+    background:#10b981;
     color:white;
     border-radius:8px;
     font-weight:bold;
@@ -217,22 +254,25 @@ footer{
 }
 
 .btn-comprar:hover{
-    background:#2e7d32;
+    background:#059669;
     transform:translateY(-2px);
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
 }
 
 /* BENEFICIOS */
 
 .beneficios{
     padding:80px 40px;
-    background:#ffffff;
+    background: transparent;
     text-align:center;
+    color: #e2e8f0;
 }
 
 .beneficios h2{
-    color:#2e7d32;
+    color: #e2e8f0;
     margin-bottom:40px;
     font-size:32px;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
 }
 
 .beneficios-grid{
@@ -244,37 +284,53 @@ footer{
 }
 
 .beneficios-grid div{
-    background:#f5fff5;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     padding:30px;
     border-radius:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     font-size:20px;
     font-weight:bold;
+    color: #e2e8f0;
+    transition: 0.3s;
+}
+
+.beneficios-grid div:hover {
+    border-color: rgba(0, 240, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 240, 255, 0.08);
 }
 
 /* TESTIMONIOS */
 
 .testimonios{
     padding:80px 40px;
-    background:#f5fff5;
+    background: transparent;
     text-align:center;
+    color: #e2e8f0;
 }
 
 .testimonios h2{
-    color:#2e7d32;
+    color: #e2e8f0;
     margin-bottom:40px;
     font-size:32px;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
 }
 
 .testimonio{
     max-width:700px;
     margin:20px auto;
-    background:white;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     padding:25px;
     border-radius:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     font-size:18px;
     line-height:1.6;
+    color: #e2e8f0;
 }
 
 /* EFECTO PRODUCTOS */
@@ -298,8 +354,8 @@ footer{
 
     background:
     linear-gradient(
-        rgba(0,0,0,.45),
-        rgba(0,0,0,.45)
+        rgba(5, 8, 17, 0.5),
+        rgba(5, 8, 17, 0.85)
     ),
     url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
 
@@ -314,6 +370,7 @@ footer{
     font-size:72px;
     font-weight:800;
     margin-bottom:20px;
+    text-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
 }
 
 .hero p{
@@ -322,6 +379,7 @@ footer{
     margin-bottom:35px;
     font-size:22px;
     line-height:1.7;
+    color: #cbd5e1;
 }
 
 
@@ -332,6 +390,10 @@ footer{
     color:white;
     text-align:center;
     padding:40px 20px;
+}
+
+footer p{
+    font-size:16px;
 }
 
 /* HEADER FIJO */
@@ -389,7 +451,10 @@ header{
         top:70px;
         left:0;
         width:100%;
-        background:#2e7d32;
+        background: rgba(10, 17, 32, 0.95);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         flex-direction:column;
         text-align:center;
         padding:20px 0;
@@ -432,18 +497,23 @@ header{
 }
 
 .producto-detalle{
-    background:white;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius:20px;
     padding:40px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: #e2e8f0;
 }
 
 .producto-detalle h1{
     text-align:center;
-    color:#2e7d32;
+    color: #ffffff;
     font-size:42px;
     line-height:1.2;
     margin-bottom:30px;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
 }
 
 @media(max-width:768px){
@@ -471,16 +541,17 @@ header{
 
 .precio{
     text-align:center;
-    color:#2e7d32;
+    color: #00f0ff;
     font-size:34px;
     font-weight:bold;
     margin-bottom:25px;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
 }
 
 .producto-detalle p{
     font-size:18px;
     line-height:1.8;
-    color:#333;
+    color: #cbd5e1;
 }
 
 .producto-detalle ul{
@@ -587,8 +658,9 @@ header{
 
 .paginacion a,
 .paginacion .pagina-actual{
-    background:#2e7d32;
-    color:white;
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
     display:inline-flex;
     align-items:center;
     justify-content:center;
@@ -602,12 +674,16 @@ header{
 }
 
 .paginacion a:hover{
-    background:#1b5e20;
+    background: rgba(0, 240, 255, 0.15);
+    border-color: rgba(0, 240, 255, 0.4);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
 }
 
 .paginacion .pagina-actual{
-    background:#0f3d14;
-    border:2px solid #a5d6a7;
+    background: rgba(0, 240, 255, 0.1);
+    border: 2px solid rgba(0, 240, 255, 0.4);
+    color: #00f0ff;
     cursor:default;
 }
 
@@ -698,12 +774,16 @@ header{
     right: -420px;
     width: 400px;
     height: 100%;
-    background: #ffffff;
-    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+    background: rgba(10, 17, 32, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
     z-index: 1001;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
     transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
+    color: #e2e8f0;
 }
 
 .cart-drawer.active {
@@ -720,12 +800,12 @@ header{
 /* Header Drawer */
 .cart-header {
     padding: 20px;
-    background: #2e7d32;
+    background: rgba(15, 23, 42, 0.5);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #1b5e20;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
 }
 
 .cart-header h2 {
@@ -852,8 +932,8 @@ header{
 /* Footer Drawer */
 .cart-footer {
     padding: 20px;
-    border-top: 1px solid #e8f5e9;
-    background: #f5fff5;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(15, 23, 42, 0.5);
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -864,12 +944,13 @@ header{
     justify-content: space-between;
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: #e2e8f0;
 }
 
 .cart-total-amount {
-    color: #2e7d32;
+    color: #00f0ff;
     font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
 }
 
 .btn-checkout {
@@ -978,4 +1059,68 @@ header{
     background: #1b5e20;
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}
+
+@media (min-width: 1025px) {
+    h1,
+    .hero h1,
+    .producto-detalle h1 {
+        font-size: 72px;
+    }
+
+    h2,
+    #productos h2,
+    .beneficios h2,
+    .testimonios h2,
+    .cart-header h2 {
+        font-size: 48px;
+    }
+
+    p,
+    .hero p,
+    .producto-detalle p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    h2,
+    #productos h2,
+    .beneficios h2,
+    .testimonios h2,
+    .cart-header h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2,
+    #productos h2,
+    .beneficios h2,
+    .testimonios h2,
+    .cart-header h2 {
+        font-size: 48px;
+    }
+
+    p,
+    .hero p,
+    .producto-detalle p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1,
+    .hero h1,
+    .producto-detalle h1 {
+        font-size: 40px;
+    }
+
+    h2,
+    #productos h2,
+    .beneficios h2,
+    .testimonios h2,
+    .cart-header h2 {
+        font-size: 32px;
+    }
 }

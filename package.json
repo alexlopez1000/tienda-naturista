@@ -1,0 +1,12 @@
+{
+  "name": "tienda-naturista",
+  "version": "1.0.0",
+  "description": "Tienda Naturista con fondo dinámico WebGL",
+  "main": "static/js/dynamic-bg.js",
+  "scripts": {
+    "prepare": "node -e \"const fs=require('fs'); fs.mkdirSync('static/js', {recursive:true}); fs.copyFileSync('node_modules/three/build/three.module.js', 'static/js/three.module.js'); console.log('Three.js copiado exitosamente.')\""
+  },
+  "dependencies": {
+    "three": "^0.128.0"
+  }
+}

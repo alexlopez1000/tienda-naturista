@@ -14,6 +14,10 @@
 </head>
 
 <body>
+    {{ if .Site.Params.enableDynamicBg }}
+    <!-- Contenedor del fondo interactivo WebGL -->
+    <canvas id="dynamic-bg"></canvas>
+    {{ end }}
 
     {{ partial "nav.html" . }}
 
@@ -55,6 +59,19 @@
     </script>
 
     <script src="/js/cart.js"></script>
+
+    {{ if .Site.Params.enableDynamicBg }}
+    <!-- Import Map para resolver la importación de Three.js como módulo ES -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js"
+            }
+        }
+    </script>
+    <!-- Entrada principal del fondo dinámico modular -->
+    <script type="module" src="/js/dynamic-bg.js"></script>
+    {{ end }}
 
 </body>
 
