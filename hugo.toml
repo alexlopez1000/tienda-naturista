@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = '/'
 languageCode = 'es-co'
 title = 'Tienda Naturista Vida Sana'
 
