@@ -3,8 +3,12 @@
 <div class="container">
 
     {{ if eq .Section "productos" }}
-    <a class="volver" href="/productos/">
-        ← Volver a productos
+    <a class="volver-flotante" href="/productos/"
+        onclick="if(document.referrer && document.referrer.includes(window.location.host)){ event.preventDefault(); window.history.back(); }"
+        title="Volver">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+        </svg>
     </a>
     {{ end }}
 
@@ -36,11 +40,12 @@
 
         <div class="acciones-producto acciones-{{ .File.BaseFileName }}">
             {{ if eq .Section "productos" }}
-            <button class="btn-agregar-single" data-id="{{ .RelPermalink }}" data-title="{{ .Title }}" data-price="{{ .Params.price }}" data-image="{{ .Params.image }}">
+            <button class="btn-agregar-single" data-id="{{ .RelPermalink }}" data-title="{{ .Title }}"
+                data-price="{{ .Params.price }}" data-image="{{ .Params.image }}">
                 Agregar al Carrito
             </button>
             {{ else }}
-            <a class="btn btn-contacto-whatsapp" href="https://wa.me/573146865924?text={{ urlquery "Hola, necesito información" }}" target="_blank" rel="noopener noreferrer">
+            <a class="btn btn-contacto-whatsapp" href="https://wa.me/573245208396?text={{ urlquery "Hola, necesito información" }}" target="_blank" rel="noopener noreferrer">
                 Contactanos al Whatsapp
             </a>
             {{ end }}

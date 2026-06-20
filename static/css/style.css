@@ -478,7 +478,26 @@ header {
     }
 
     .hero {
+        position: relative;
         min-height: 75vh;
+        background: none !important;
+        clip-path: inset(0 0 0 0);
+    }
+
+    .hero::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120vh;
+        background: linear-gradient(rgba(5, 8, 17, 0.5), rgba(5, 8, 17, 0.85)),
+                    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        pointer-events: none;
+        will-change: transform;
     }
 
     header {
@@ -560,25 +579,11 @@ header {
 .producto-detalle h1 {
     text-align: center;
     color: #ffffff;
-    font-size: 42px;
+    font-size: 22px;
     line-height: 1.2;
-    margin-bottom: 30px;
-    text-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
-}
-
-@media(max-width:768px) {
-
-    .producto-detalle h1 {
-        font-size: 32px;
-    }
-}
-
-@media(max-width:480px) {
-
-    .producto-detalle h1 {
-        font-size: 26px;
-        margin-bottom: 22px;
-    }
+    padding: 15px 0;
+    margin-bottom: 20px;
+    text-shadow: none;
 }
 
 .imagen {
@@ -630,12 +635,62 @@ header {
     transform: translateY(-3px);
 }
 
-.volver {
-    display: inline-block;
-    margin-bottom: 25px;
-    color: #2e7d32;
+/* Botón Volver Flotante */
+.volver-flotante {
+    position: fixed;
+    top: 120px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 240, 255, 0.35);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00f0ff;
     text-decoration: none;
-    font-weight: bold;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 12px rgba(0, 240, 255, 0.2);
+    z-index: 998;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.volver-flotante svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.volver-flotante:hover {
+    background: #00f0ff;
+    color: #03050c;
+    border-color: #00f0ff;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.volver-flotante:hover svg {
+    transform: translateX(-3px);
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .volver-flotante {
+        top: 100px;
+        left: 15px;
+        width: 44px;
+        height: 44px;
+        background: rgba(15, 23, 42, 0.8);
+        border-color: rgba(0, 240, 255, 0.35);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 240, 255, 0.15);
+    }
+
+    .volver-flotante:hover {
+        transform: none;
+    }
 }
 
 .contenido-producto {
@@ -914,11 +969,11 @@ header {
 .cart-item-title {
     font-weight: bold;
     font-size: 15px;
-    color: #333;
+    color: #ffffff;
 }
 
 .cart-item-price {
-    color: #2e7d32;
+    color: #4caf50;
     font-size: 14px;
     font-weight: 600;
 }
@@ -1091,8 +1146,7 @@ header {
 @media (min-width: 1025px) {
 
     h1,
-    .hero h1,
-    .producto-detalle h1 {
+    .hero h1 {
         font-size: 72px;
     }
 
@@ -1142,8 +1196,7 @@ header {
 @media (max-width: 480px) {
 
     h1,
-    .hero h1,
-    .producto-detalle h1 {
+    .hero h1 {
         font-size: 40px;
     }
 

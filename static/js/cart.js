@@ -44,15 +44,15 @@ function toggleCart() {
 // Agregar producto al carrito
 function addToCart(product) {
     const existingIndex = cart.findIndex(item => item.id === product.id);
-    
+
     if (existingIndex > -1) {
         cart[existingIndex].quantity += 1;
     } else {
         cart.push(product);
     }
-    
+
     saveCart();
-    
+
     // Abrir automáticamente el carrito para dar feedback visual de que se agregó
     const drawer = document.getElementById('cart-drawer');
     if (drawer && !drawer.classList.contains('active')) {
@@ -88,17 +88,17 @@ function updateCartUI() {
     const cartCount = document.getElementById('cart-count');
     const cartItemsContainer = document.getElementById('cart-items');
     const cartTotalAmount = document.getElementById('cart-total-amount');
-    
+
     // Calcular cantidad total de productos
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     if (cartCount) {
         cartCount.textContent = totalItems;
     }
-    
+
     // Limpiar contenedor de items
     if (!cartItemsContainer) return;
     cartItemsContainer.innerHTML = '';
-    
+
     if (cart.length === 0) {
         cartItemsContainer.innerHTML = '<div class="empty-cart-msg">Tu carrito está vacío.</div>';
         if (cartTotalAmount) {
@@ -106,13 +106,13 @@ function updateCartUI() {
         }
         return;
     }
-    
+
     let total = 0;
-    
+
     cart.forEach(item => {
         const itemSubtotal = item.price * item.quantity;
         total += itemSubtotal;
-        
+
         const itemElement = document.createElement('div');
         itemElement.className = 'cart-item';
         itemElement.innerHTML = `
@@ -130,7 +130,7 @@ function updateCartUI() {
         `;
         cartItemsContainer.appendChild(itemElement);
     });
-    
+
     if (cartTotalAmount) {
         cartTotalAmount.textContent = formatPrice(total);
     }
@@ -142,20 +142,20 @@ function checkoutCart() {
         alert('Tu carrito está vacío. Agrega productos antes de realizar el pedido.');
         return;
     }
-    
+
     let total = 0;
     let message = '🌿 *Vida Sana - Nuevo Pedido* 🌿\n\n';
     message += 'Hola, me gustaría comprar los siguientes productos:\n\n';
-    
+
     cart.forEach(item => {
         const subtotal = item.price * item.quantity;
         total += subtotal;
         message += `• *${item.quantity}x* ${item.title} (${formatPrice(item.price)} c/u) \n  _Subtotal: ${formatPrice(subtotal)}_\n\n`;
     });
-    
+
     message += `💰 *Total a pagar:* ${formatPrice(total)}\n\n`;
     message += '¡Muchas gracias! Quedo atento a la confirmación.';
-    
-    const whatsappUrl = `https://wa.me/573146865924?text=${encodeURIComponent(message)}`;
+
+    const whatsappUrl = `https://wa.me/573245208396?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
