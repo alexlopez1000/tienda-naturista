@@ -54,10 +54,33 @@ header {
 }
 
 nav a {
-    color: white;
+    color: rgba(255, 255, 255, 0.65);
     text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a.nav-activo {
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.3);
+    box-shadow: 0 0 14px rgba(16, 185, 129, 0.15);
+}
+
+nav a.nav-activo:hover {
+    background: rgba(16, 185, 129, 0.15);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.22);
 }
 
 .hero {
@@ -542,8 +565,9 @@ header {
     }
 
     nav a {
-        margin: 12px 0;
-        font-size: 18px;
+        margin: 4px 16px;
+        font-size: 16px;
+        text-align: center;
     }
 
     .hero h1 {
