@@ -1,28 +1,29 @@
 ---
-title: "Selank 10mg + Semax 10 mg — Cognitive & Neuroregulatory Research System"
+title: "Selank 10mg + Semax 10 mg — Sistema de Investigación Cognitiva y Neurorreguladora"
 price: 1120000
 image: "/images/selank-semax.webp"
-description: "Selank + Semax 10 mg / 10 mg is a dual neuropeptide research blend designed for advanced studies related to cognitive performance models, neuroregulatory signaling, stress-respo..."
+description: "Selank + Semax 10 mg / 10 mg es una mezcla dual de neuropéptidos para investigación avanzada, diseñada para estudios relacionados con modelos de rendimiento cognitivo, señalización neurorreguladora, vías de respuesta al estrés y modulación de neurotransmisores."
 ---
 
-Selank + Semax 10 mg / 10 mg is a dual neuropeptide research blend designed for advanced studies related to cognitive performance models, neuroregulatory signaling, stress-response pathways, neurotransmitter modulation, neuroplasticity, and central nervous system research.
+Selank + Semax 10 mg / 10 mg es una mezcla dual de neuropéptidos para investigación avanzada, diseñada para estudios relacionados con modelos de rendimiento cognitivo, señalización neurorreguladora, vías de respuesta al estrés, modulación de neurotransmisores, neuroplasticidad e investigación del sistema nervioso central.
 
-This formulation combines:
+Esta formulación combina:
 
 - Selank 10 mg
-
 - Semax 10 mg
 
-Selank is a synthetic heptapeptide analog commonly studied for its potential interaction with stress modulation, anxiolytic-like pathways, immune-neural communication, emotional regulation, and GABAergic signaling models.
+Selank es un análogo heptapeptídico sintético comúnmente estudiado por su posible interacción con la modulación del estrés, vías de tipo ansiolítico, comunicación inmune-neural, regulación emocional y modelos de señalización GABAérgica.
 
-Semax is a synthetic peptide analog commonly investigated for its potential role in neuroprotection, attention models, memory-related mechanisms, BDNF-associated pathways, cognitive signaling, and dopaminergic modulation.
+Semax es un análogo peptídico sintético comúnmente investigado por su posible papel en la neuroprotección, modelos de atención, mecanismos relacionados con la memoria, vías asociadas al BDNF, señalización cognitiva y modulación dopaminérgica.
 
-Together, Selank + Semax are commonly researched as a complementary cognitive and neuroregulatory peptide system, with applications in models related to focus, mental clarity, stress resilience, cognitive recovery, neuroplasticity, and CNS regulation.
+Juntos, Selank + Semax se investigan frecuentemente como un sistema peptídico cognitivo y neurorregulador complementario, con aplicaciones en modelos relacionados con el enfoque, la claridad mental, la resiliencia al estrés, la recuperación cognitiva, la neuroplasticidad y la regulación del SNC.
 
-Product format: Lyophilized peptide blend
-Concentration: 10 mg Selank + 10 mg Semax
-Total content: 20 mg
-Category: Cognitive / Neuroregulatory Research
-Use: Research use only
+Formato del producto: Mezcla peptídica liofilizada
+Concentración: 10 mg Selank + 10 mg Semax
+Contenido total: 20 mg
+Categoría: Investigación Cognitiva / Neurorreguladora
+Uso: Solo para uso en investigación
 
-Disclaimer: This product is intended for laboratory research purposes only. Not for human consumption, diagnostic use, therapeutic use, or clinical application.
+Synthera Labs presenta Selank + Semax como parte de su línea de investigación cognitiva y neurorreguladora, respaldado por abastecimiento global de materias primas, revisión de documentación analítica, estándares de procesamiento, trazabilidad por lote y verificación vinculada a código QR.
+
+Aviso: Este producto está destinado exclusivamente a fines de investigación en laboratorio. No apto para consumo humano, uso diagnóstico, terapéutico ni aplicación clínica.

@@ -1,41 +1,36 @@
 ---
-title: "CJC-1295 + Ipamorelin 5 mg / 5 mg — Endocrine & Recovery Research System"
+title: "CJC-1295 + Ipamorelin 5 mg / 5 mg — Sistema de Investigación Endocrina y de Recuperación"
 price: 1120000
 image: "/images/cjc-1295.webp"
-description: "CJC-1295 5 mg + Ipamorelin 5 mg is a dual-peptide research blend designed for advanced studies related to growth hormone signaling, IGF-1 pathway modulation, recovery-related bi..."
+description: "CJC-1295 5 mg + Ipamorelin 5 mg es una mezcla de dos péptidos para estudios avanzados relacionados con la señalización de la hormona de crecimiento, modulación de la vía IGF-1, biología relacionada con la recuperación y actividad endocrina asociada al sueño."
 ---
 
-CJC-1295 5 mg + Ipamorelin 5 mg is a dual-peptide research blend designed for advanced studies related to growth hormone signaling, IGF-1 pathway modulation, recovery-related biology, sleep-associated endocrine activity, body composition models, and metabolic regulation research.
+CJC-1295 5 mg + Ipamorelin 5 mg es una mezcla de péptidos duales para investigación avanzada, diseñada para estudios relacionados con la señalización de la hormona de crecimiento, modulación de la vía IGF-1, biología relacionada con la recuperación, actividad endocrina asociada al sueño, modelos de composición corporal e investigación de regulación metabólica.
 
-This formulation combines two widely studied secretagogue-based peptide systems:
+Esta formulación combina dos sistemas peptídicos ampliamente estudiados basados en secretagogos:
 
-CJC-1295 is a synthetic peptide analog associated with growth hormone-releasing hormone (GHRH) research, commonly investigated for its role in stimulating endogenous growth hormone signaling through GHRH receptor pathways and supporting IGF-1-related research models.
+CJC-1295 es un análogo peptídico sintético asociado con la investigación de la hormona liberadora de la hormona del crecimiento (GHRH), comúnmente investigado por su papel en la estimulación de la señalización endógena de la hormona del crecimiento a través de las vías del receptor GHRH y en el apoyo a los modelos de investigación relacionados con IGF-1.
 
-Ipamorelin is a selective peptide secretagogue commonly studied for its interaction with ghrelin receptor / growth hormone secretagogue receptor (GHS-R) pathways, with research interest focused on pulsatile growth hormone signaling, recovery-related endocrine activity, and metabolic support models.
+Ipamorelin es un secretagogo peptídico selectivo comúnmente estudiado por su interacción con las vías del receptor de ghrelina / receptor secretagogo de la hormona del crecimiento (GHS-R), con interés de investigación centrado en la señalización pulsátil de la hormona del crecimiento, la actividad endocrina relacionada con la recuperación y los modelos de soporte metabólico.
 
-Together, CJC-1295 + Ipamorelin are commonly investigated as a complementary endocrine research system due to their potential involvement in:
+Juntos, CJC-1295 + Ipamorelin se investigan frecuentemente como un sistema de investigación endocrina complementario debido a su posible participación en:
 
-- endogenous growth hormone signaling
+- señalización endógena de la hormona del crecimiento
+- vías asociadas al IGF-1
+- modelos de investigación de recuperación y regeneración
+- regulación de la composición corporal y el metabolismo
+- actividad endocrina relacionada con el sueño
+- investigación de recuperación de masa magra y tejidos
+- modelos de rendimiento y resiliencia
+- ritmo hormonal y señalización basada en secretagogos
 
-- IGF-1-associated pathways
+Formato del producto: Mezcla peptídica liofilizada
+Concentración: 5 mg CJC-1295 + 5 mg Ipamorelin
+Contenido total: 10 mg
+Categoría: Investigación Endocrina / de Recuperación
+Sistema peptídico: CJC-1295 + Ipamorelin
+Uso: Solo para uso en investigación
 
-- recovery and regenerative research models
+Synthera Labs presenta este compuesto como parte de su línea de investigación endocrina y de recuperación, respaldado por abastecimiento global de materias primas, revisión de documentación analítica, estándares de procesamiento, trazabilidad por lote y verificación vinculada a código QR.
 
-- body composition and metabolic regulation
-
-- sleep-related endocrine activity
-
-- lean mass and tissue recovery research
-
-- performance and resilience models
-
-- hormonal rhythm and secretagogue-based signaling
-
-Synthera Labs presents this compound as part of its endocrine and recovery research line, supported by global raw material sourcing, analytical documentation review, downstream processing standards, batch traceability, and QR-linked verification.
-
-Product format: Lyophilized peptide blend
-Concentration: 5 mg CJC-1295 + 5 mg Ipamorelin
-Total content: 10 mg
-Category: Endocrine / Recovery Research
-Peptide system: CJC-1295 + Ipamorelin
-Use: Research use only
+Aviso: Este producto está destinado exclusivamente a fines de investigación en laboratorio. No apto para consumo humano, uso diagnóstico, terapéutico ni aplicación clínica.

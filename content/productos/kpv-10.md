@@ -1,36 +1,30 @@
 ---
-title: "KPV 10 mg — Immunomodulatory & Inflammatory Research System"
+title: "KPV 10 mg — Sistema de Investigación Inmunomoduladora e Inflamatoria"
 price: 480000
 image: "/images/kpv-10.webp"
-description: "KPV 10 mg is a tripeptide research compound studied for its potential role in inflammatory modulation, immune signaling, epithelial barrier integrity, gut-related inflammatory m..."
+description: "KPV 10 mg es un compuesto tripeptídico para investigación, estudiado por su posible papel en la modulación inflamatoria, señalización inmune, integridad de la barrera epitelial, modelos de inflamación intestinal y vías de protección tisular."
 ---
 
-KPV 10 mg is a tripeptide research compound studied for its potential role in inflammatory modulation, immune signaling, epithelial barrier integrity, gut-related inflammatory models, skin inflammation pathways, and tissue protection research.
+KPV 10 mg es un compuesto tripeptídico para investigación, estudiado por su posible papel en la modulación inflamatoria, señalización inmune, integridad de la barrera epitelial, modelos de inflamación intestinal, vías de inflamación cutánea e investigación de protección tisular.
 
-KPV is a short peptide sequence derived from the C-terminal region of alpha-melanocyte-stimulating hormone (α-MSH), commonly investigated for its interaction with pathways related to cytokine regulation, immune response modulation, NF-κB signaling, oxidative stress, and epithelial tissue homeostasis.
+KPV es una secuencia peptídica corta derivada de la región C-terminal de la hormona alfa-estimulante de melanocitos (α-MSH), comúnmente investigada por su interacción con vías relacionadas con la regulación de citocinas, modulación de la respuesta inmune, señalización del NF-κB, estrés oxidativo y homeostasis del tejido epitelial.
 
-Research areas commonly associated with KPV include:
+Áreas de investigación comúnmente asociadas con KPV:
 
-- inflammatory signaling modulation
+- modulación de la señalización inflamatoria
+- vías de investigación relacionadas con citocinas
+- modelos de barrera intestinal e inflamación intestinal
+- protección del tejido epitelial
+- investigación de inflamación dermatológica
+- respuesta al estrés oxidativo
+- modelos de equilibrio inmune y recuperación tisular
 
-- cytokine-related research pathways
+Formato del producto: Péptido liofilizado
+Concentración: 10 mg
+Categoría: Investigación Inmunomoduladora / Inflamatoria
+Sistema peptídico: KPV
+Uso: Solo para uso en investigación
 
-- gut barrier and intestinal inflammation models
+Synthera Labs presenta KPV como parte de su línea de investigación inmunomoduladora y regenerativa, respaldado por abastecimiento global de materias primas, revisión de documentación analítica, estándares de procesamiento, trazabilidad por lote y verificación vinculada a código QR.
 
-- epithelial tissue protection
-
-- dermatological inflammation research
-
-- oxidative stress response
-
-- immune balance and tissue recovery models
-
-Synthera Labs presents KPV as part of its immunomodulatory and regenerative research line, supported by global raw material sourcing, analytical documentation review, downstream processing standards, batch traceability, and QR-linked verification.
-
-Product format: Lyophilized peptide
-Concentration: 10 mg
-Category: Immunomodulatory / Inflammatory Research
-Peptide system: KPV
-Use: Research use only
-
-Disclaimer: This product is intended for laboratory research purposes only. Not for human consumption, diagnostic use, therapeutic use, or clinical application.
+Aviso: Este producto está destinado exclusivamente a fines de investigación en laboratorio. No apto para consumo humano, uso diagnóstico, terapéutico ni aplicación clínica.

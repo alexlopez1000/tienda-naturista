@@ -1,40 +1,33 @@
 ---
-title: "Tesamorelin 10 mg — GHRH Analog Research Peptide"
+title: "Tesamorelin 10 mg — Péptido Análogo de GHRH para Investigación"
 price: 1000000
 image: "/images/tesamorelin.webp"
-description: "Tesamorelin 10 mg is a synthetic growth hormone-releasing hormone analog studied for its role in endogenous growth hormone signaling, IGF-1 pathway activation, visceral adiposit..."
+description: "Tesamorelin 10 mg es un análogo sintético de la hormona liberadora de la hormona del crecimiento (GHRH), estudiado por su papel en la señalización endógena de la hormona del crecimiento, activación de la vía IGF-1, modelos de adiposidad visceral y regulación metabólica."
 ---
 
-Tesamorelin 10 mg is a synthetic growth hormone-releasing hormone analog studied for its role in endogenous growth hormone signaling, IGF-1 pathway activation, visceral adiposity models, metabolic regulation, and body composition research.
+Tesamorelin 10 mg es un análogo sintético de la hormona liberadora de la hormona del crecimiento, estudiado por su papel en la señalización endógena de la hormona del crecimiento, activación de la vía IGF-1, modelos de adiposidad visceral, regulación metabólica e investigación de composición corporal.
 
-Tesamorelin is structurally related to human growth hormone-releasing factor and is designed to stimulate GHRH/GRF receptor pathways associated with pulsatile growth hormone release from pituitary somatotroph cells. FDA prescribing information describes tesamorelin as a synthetic human growth hormone-releasing factor analog that binds and stimulates human GRF receptors, supporting endogenous GH release.
+Tesamorelin está estructuralmente relacionado con el factor liberador de la hormona del crecimiento humana y está diseñado para estimular las vías del receptor GHRH/GRF asociadas con la liberación pulsátil de la hormona del crecimiento desde las células somatotropas hipofisarias. La información de prescripción de la FDA describe a Tesamorelin como un análogo sintético del factor liberador de la hormona del crecimiento humana que se une y estimula los receptores GRF humanos, apoyando la liberación endógena de GH.
 
-In research and clinical literature, tesamorelin has been studied primarily for its effects on visceral adipose tissue, particularly in models of HIV-associated lipodystrophy. Clinical data show that tesamorelin can reduce excess abdominal/visceral fat in that context, while its broader metabolic applications remain research-dependent and should not be overstated.
+En la literatura de investigación y clínica, Tesamorelin ha sido estudiado principalmente por sus efectos sobre el tejido adiposo visceral, particularmente en modelos de lipodistrofia asociada al VIH. Los datos clínicos muestran que Tesamorelin puede reducir el exceso de grasa abdominal y visceral en ese contexto, mientras que sus aplicaciones metabólicas más amplias siguen siendo dependientes de la investigación y no deben sobrestimarse.
 
-Research areas commonly associated with Tesamorelin include:
+Áreas de investigación comúnmente asociadas con Tesamorelin:
 
-- growth hormone-releasing hormone receptor signaling
+- señalización del receptor de la hormona liberadora de la hormona del crecimiento
+- modulación del eje endógeno GH e IGF-1
+- investigación de adiposidad visceral
+- modelos de composición corporal
+- investigación de salud metabólica
+- vías asociadas a la lipólisis
+- estudios de señalización endocrina
+- modelos de investigación hepática y cardiometabólica
 
-- endogenous GH and IGF-1 axis modulation
+Formato del producto: Péptido liofilizado
+Concentración: 10 mg
+Categoría: Investigación Endocrina / Metabólica
+Sistema peptídico: Tesamorelin
+Uso: Solo para uso en investigación
 
-- visceral adiposity research
+Synthera Labs presenta Tesamorelin como parte de su línea de investigación endocrina y metabólica, respaldado por abastecimiento global de materias primas, revisión de documentación analítica, estándares de procesamiento, trazabilidad por lote y verificación vinculada a código QR.
 
-- body composition models
-
-- metabolic health research
-
-- lipolysis-associated pathways
-
-- endocrine signaling studies
-
-- hepatic and cardiometabolic research models
-
-Synthera Labs presents Tesamorelin as part of its endocrine and metabolic research line, supported by global raw material sourcing, analytical documentation review, downstream processing standards, batch traceability, and QR-linked verification.
-
-Product format: Lyophilized peptide
-Concentration: 10 mg
-Category: Endocrine / Metabolic Research
-Peptide system: Tesamorelin
-Use: Research use only
-
-Disclaimer: This product is intended for laboratory research purposes only. Not for human consumption, diagnostic use, therapeutic use, or clinical application.
+Aviso: Este producto está destinado exclusivamente a fines de investigación en laboratorio. No apto para consumo humano, uso diagnóstico, terapéutico ni aplicación clínica.

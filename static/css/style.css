@@ -186,8 +186,12 @@ nav a {
 }
 
 footer {
-    background: #2e7d32;
-    color: white;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.3);
+    color: #e2e8f0;
     text-align: center;
     padding: 20px;
 }
@@ -436,8 +440,12 @@ footer {
 /* FOOTER */
 
 footer {
-    background: #1b5e20;
-    color: white;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.3);
+    color: #e2e8f0;
     text-align: center;
     padding: 40px 20px;
 }
@@ -1207,4 +1215,281 @@ header {
     .cart-header h2 {
         font-size: 32px;
     }
+}
+
+/* ── PÁGINA DE CONTACTO ─────────────────────────────────── */
+
+.contacto-wrapper {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contacto-titulo {
+    font-size: 48px;
+    color: #e2e8f0;
+    margin-bottom: 24px;
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+    line-height: 1.1;
+}
+
+.contacto-descripcion {
+    font-size: 16px;
+    color: #94a3b8;
+    line-height: 1.75;
+    margin-bottom: 28px;
+}
+
+.contacto-email-link {
+    display: inline-block;
+    color: #10b981;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(16, 185, 129, 0.4);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s, text-shadow 0.2s;
+}
+
+.contacto-email-link:hover {
+    color: #00f0ff;
+    border-color: rgba(0, 240, 255, 0.5);
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.35);
+}
+
+
+/* Tarjeta glassmorphism del formulario */
+.contacto-card {
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Fila doble (Nombre / Apellido) */
+.form-fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Grupo de campo */
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #94a3b8;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.campo-req {
+    color: #10b981;
+    margin-left: 2px;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 11px 15px;
+    color: #e2e8f0;
+    font-size: 15px;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.form-grupo input::placeholder,
+.form-grupo textarea::placeholder {
+    color: #334155;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(0, 240, 255, 0.35);
+    box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.07);
+}
+
+.form-grupo input:-webkit-autofill,
+.form-grupo input:-webkit-autofill:hover,
+.form-grupo input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(15, 23, 42, 0.8) inset;
+    -webkit-text-fill-color: #e2e8f0;
+    border-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-grupo textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* Botón enviar */
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.btn-enviar:hover {
+    background: #059669;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+.btn-enviar:disabled {
+    background: rgba(15, 23, 42, 0.5);
+    color: #475569;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Mensaje de éxito */
+.form-exito {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    gap: 12px;
+}
+
+.form-exito-icono {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.form-exito h3 {
+    font-size: 24px;
+    color: #10b981;
+    margin: 0;
+}
+
+.form-exito p {
+    color: #94a3b8;
+    font-size: 15px;
+    margin: 0;
+}
+
+.btn-enviar-otro {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 24px;
+    border: 1px solid rgba(16, 185, 129, 0.5);
+    border-radius: 8px;
+    color: #10b981;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-enviar-otro:hover {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: #10b981;
+}
+
+/* Estados de validación */
+.form-grupo input.campo-invalido,
+.form-grupo textarea.campo-invalido {
+    border-color: rgba(239, 68, 68, 0.7);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-grupo input.campo-invalido:focus,
+.form-grupo textarea.campo-invalido:focus {
+    border-color: rgba(239, 68, 68, 0.9);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.error-msg {
+    font-size: 12px;
+    color: #f87171;
+    margin-top: 4px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .contacto-wrapper {
+        padding: 40px 20px;
+    }
+
+    .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .contacto-titulo {
+        font-size: 36px;
+    }
+
+    .form-fila {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-card {
+        padding: 24px;
+    }
+}
+
+/* ── TOAST CARRITO ──────────────────────────────────────── */
+
+.cart-toast {
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1a3c2a;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 90vw;
+    text-align: center;
+    pointer-events: none;
+}
+
+.cart-toast.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }

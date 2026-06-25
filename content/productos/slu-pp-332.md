@@ -1,38 +1,31 @@
 ---
-title: "SLU-PP-332 5 mg — Exercise-Mimetic & Metabolic Research System"
+title: "SLU-PP-332 5 mg — Sistema de Investigación Metabólica y Mimetismo del Ejercicio"
 price: 1000000
 image: "/images/slu-p-332.webp"
-description: "SLU-PP-332 5 mg is an advanced metabolic research compound studied for its potential role in exercise-mimetic signaling, energy expenditure regulation, mitochondrial function, f..."
+description: "SLU-PP-332 5 mg es un compuesto avanzado de investigación metabólica estudiado por su posible papel en la señalización mimética del ejercicio, regulación del gasto energético, función mitocondrial, oxidación de ácidos grasos y modelos de flexibilidad metabólica."
 ---
 
-SLU-PP-332 5 mg is an advanced metabolic research compound studied for its potential role in exercise-mimetic signaling, energy expenditure regulation, mitochondrial function, fatty acid oxidation, endurance-related pathways, and metabolic flexibility models.
+SLU-PP-332 5 mg es un compuesto avanzado de investigación metabólica estudiado por su posible papel en la señalización mimética del ejercicio, regulación del gasto energético, función mitocondrial, oxidación de ácidos grasos, vías relacionadas con la resistencia y modelos de flexibilidad metabólica.
 
-SLU-PP-332 is commonly investigated as an ERR agonist — estrogen-related receptor agonist — with research interest focused on its interaction with transcriptional programs involved in oxidative metabolism, skeletal muscle adaptation, mitochondrial biogenesis, and substrate utilization.
+SLU-PP-332 se investiga comúnmente como agonista ERR — agonista del receptor relacionado con estrógenos — con interés de investigación centrado en su interacción con programas transcripcionales involucrados en el metabolismo oxidativo, adaptación del músculo esquelético, biogénesis mitocondrial y utilización de sustratos.
 
-Research areas commonly associated with SLU-PP-332 include:
+Áreas de investigación comúnmente asociadas con SLU-PP-332:
 
-- exercise-mimetic molecular pathways
+- vías moleculares miméticas del ejercicio
+- regulación de la energía mitocondrial
+- investigación de oxidación de ácidos grasos
+- metabolismo del músculo esquelético
+- modelos relacionados con la resistencia y el rendimiento
+- flexibilidad metabólica
+- vías de utilización de glucosa
+- modelos de investigación de obesidad y composición corporal
 
-- mitochondrial energy regulation
+Formato del producto: Compuesto de investigación liofilizado
+Concentración: 5 mg
+Categoría: Investigación Metabólica / Mitocondrial
+Sistema de compuesto: SLU-PP-332
+Uso: Solo para uso en investigación
 
-- fatty acid oxidation research
+Synthera Labs presenta SLU-PP-332 como parte de su línea de investigación metabólica y mitocondrial, respaldado por abastecimiento global de materias primas, revisión de documentación analítica, estándares de procesamiento, trazabilidad por lote y verificación vinculada a código QR.
 
-- skeletal muscle metabolism
-
-- endurance and performance-related models
-
-- metabolic flexibility
-
-- glucose utilization pathways
-
-- obesity and body composition research models
-
-Synthera Labs presents SLU-PP-332 as part of its metabolic and mitochondrial research line, supported by global raw material sourcing, analytical documentation review, downstream processing standards, batch traceability, and QR-linked verification.
-
-Product format: Lyophilized research compound
-Concentration: 5 mg
-Category: Metabolic / Mitochondrial Research
-Compound system: SLU-PP-332
-Use: Research use only
-
-Disclaimer: This product is intended for laboratory research purposes only. Not for human consumption, diagnostic use, therapeutic use, or clinical application.
+Aviso: Este producto está destinado exclusivamente a fines de investigación en laboratorio. No apto para consumo humano, uso diagnóstico, terapéutico ni aplicación clínica.

@@ -1,36 +1,30 @@
 ---
-title: "Epitalon 50 mg — Cellular Aging & Longevity Research System"
+title: "Epitalon 50 mg — Sistema de Investigación en Envejecimiento Celular y Longevidad"
 price: 1120000
 image: "/images/epitalon.webp"
-description: "Epitalon 50 mg is a synthetic tetrapeptide research compound studied for its potential role in cellular aging models, telomere biology, circadian regulation, antioxidant defense..."
+description: "Epitalon 50 mg es un compuesto tetrapeptídico sintético para investigación, estudiado por su posible papel en modelos de envejecimiento celular, biología de los telómeros, regulación circadiana, defensa antioxidante y procesos biológicos relacionados con la longevidad."
 ---
 
-Epitalon 50 mg is a synthetic tetrapeptide research compound studied for its potential role in cellular aging models, telomere biology, circadian regulation, antioxidant defense, pineal peptide signaling, and longevity-related biological processes.
+Epitalon 50 mg es un compuesto tetrapeptídico sintético para investigación, estudiado por su posible papel en modelos de envejecimiento celular, biología de los telómeros, regulación circadiana, defensa antioxidante, señalización de péptidos pineales y procesos biológicos relacionados con la longevidad.
 
-Epitalon is commonly investigated in research models related to cellular senescence, oxidative stress modulation, gene expression regulation, melatonin-associated pathways, and age-related functional decline.
+Epitalon se investiga frecuentemente en modelos de investigación relacionados con la senescencia celular, modulación del estrés oxidativo, regulación de la expresión génica, vías asociadas a la melatonina y el declive funcional relacionado con el envejecimiento.
 
-Research areas commonly associated with Epitalon include:
+Áreas de investigación comúnmente asociadas con Epitalon:
 
-- telomere-associated cellular aging models
+- modelos de envejecimiento celular asociados a telómeros
+- regulación del estrés oxidativo
+- ritmo circadiano y señalización de la glándula pineal
+- investigación en longevidad y senescencia
+- vías de reparación celular
+- modelos de envejecimiento inmune y metabólico
+- investigación en regulación neuroendocrina
 
-- oxidative stress regulation
+Formato del producto: Péptido liofilizado
+Concentración: 50 mg
+Categoría: Investigación en Longevidad / Envejecimiento Celular
+Sistema peptídico: Epitalon
+Uso: Solo para uso en investigación
 
-- circadian rhythm and pineal gland signaling
+Synthera Labs presenta Epitalon como parte de su línea de investigación en longevidad, respaldado por abastecimiento global de materias primas, revisión de documentación analítica, estándares de procesamiento, trazabilidad por lote y verificación vinculada a código QR.
 
-- longevity and senescence research
-
-- cellular repair pathways
-
-- immune and metabolic aging models
-
-- neuroendocrine regulation research
-
-Synthera Labs presents Epitalon as part of its longevity research line, supported by global raw material sourcing, analytical documentation review, downstream processing standards, batch traceability, and QR-linked verification.
-
-Product format: Lyophilized peptide
-Concentration: 50 mg
-Category: Longevity / Cellular Aging Research
-Peptide system: Epitalon
-Use: Research use only
-
-Disclaimer: This product is intended for laboratory research purposes only. Not for human consumption, diagnostic use, therapeutic use, or clinical application.
+Aviso: Este producto está destinado exclusivamente a fines de investigación en laboratorio. No apto para consumo humano, uso diagnóstico, terapéutico ni aplicación clínica.

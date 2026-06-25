@@ -1,0 +1,172 @@
+{{ define "main" }}
+<div class="contacto-wrapper">
+    <div class="contacto-grid">
+
+        <div class="contacto-info">
+            <h1 class="contacto-titulo">Contáctenos</h1>
+            <p class="contacto-descripcion">
+                Para más información sobre las operaciones de Synthera Labs u otros intereses
+                comerciales, comuníquese con nosotros al correo electrónico proporcionado a
+                continuación.
+            </p>
+            <a href="mailto:contacto@vidasana.com" class="contacto-email-link">
+                contacto@vidasana.com
+            </a>
+        </div>
+
+        <div class="contacto-card">
+            <form id="formulario-contacto" name="contacto" method="POST" action="/contacto/?exito=1" data-netlify="true"
+                data-netlify-honeypot="campo-trampa" novalidate>
+                <input type="hidden" name="form-name" value="contacto" />
+                <div style="display:none;">
+                    <label>No rellenar: <input name="campo-trampa" /></label>
+                </div>
+
+                <div class="form-fila">
+                    <div class="form-grupo">
+                        <label for="nombre">Nombre <span class="campo-req">*</span></label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+                    </div>
+                    <div class="form-grupo">
+                        <label for="apellido">Apellido <span class="campo-req">*</span></label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" />
+                    </div>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="correo">Correo Electrónico <span class="campo-req">*</span></label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" />
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje <span class="campo-req">*</span></label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar" id="btn-enviar" disabled>Enviar</button>
+            </form>
+
+            <div class="form-exito" id="form-exito">
+                <div class="form-exito-icono">✅</div>
+                <h3>¡Mensaje enviado!</h3>
+                <p>Gracias por contactarnos. Te responderemos a la brevedad posible.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    (function () {
+        /* ── Mostrar éxito si Netlify redirigió con ?exito=1 ── */
+        if (new URLSearchParams(window.location.search).get('exito') === '1') {
+            document.getElementById('formulario-contacto').style.display = 'none';
+            document.getElementById('form-exito').style.display = 'flex';
+            return;
+        }
+
+        var CORREO_DESTINO = 'apedro@unicauca.edu.co';
+
+        function esEmailValido(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+        }
+
+        function marcarError(campo, msg) {
+            campo.classList.add('campo-invalido');
+            var grupo = campo.closest('.form-grupo');
+            if (!grupo.querySelector('.error-msg')) {
+                var span = document.createElement('span');
+                span.className = 'error-msg';
+                span.textContent = msg;
+                grupo.appendChild(span);
+            }
+        }
+
+        function limpiarError(campo) {
+            campo.classList.remove('campo-invalido');
+            var grupo = campo.closest('.form-grupo');
+            var msg = grupo && grupo.querySelector('.error-msg');
+            if (msg) msg.remove();
+        }
+
+        var btnEnviar = document.getElementById('btn-enviar');
+
+        function verificarFormulario() {
+            var nombre  = document.getElementById('nombre').value.trim();
+            var apellido = document.getElementById('apellido').value.trim();
+            var correo  = document.getElementById('correo').value.trim();
+            var mensaje = document.getElementById('mensaje').value.trim();
+            var todoCompleto = nombre && apellido && esEmailValido(correo) && mensaje;
+            btnEnviar.disabled = !todoCompleto;
+        }
+
+        /* Limpiar error y re-evaluar botón en tiempo real al escribir */
+        ['nombre', 'apellido', 'correo', 'mensaje'].forEach(function (id) {
+            document.getElementById(id).addEventListener('input', function () {
+                limpiarError(this);
+                verificarFormulario();
+            });
+        });
+
+        document.getElementById('formulario-contacto').addEventListener('submit', function (e) {
+            var nombre = document.getElementById('nombre');
+            var apellido = document.getElementById('apellido');
+            var correo = document.getElementById('correo');
+            var mensaje = document.getElementById('mensaje');
+            var campos = [nombre, apellido, correo, mensaje];
+
+            /* Limpiar estado previo */
+            campos.forEach(limpiarError);
+
+            var valido = true;
+
+            if (!nombre.value.trim()) {
+                marcarError(nombre, 'El nombre es obligatorio.');
+                valido = false;
+            }
+
+            if (!apellido.value.trim()) {
+                marcarError(apellido, 'El apellido es obligatorio.');
+                valido = false;
+            }
+
+            if (!correo.value.trim()) {
+                marcarError(correo, 'El correo electrónico es obligatorio.');
+                valido = false;
+            } else if (!esEmailValido(correo.value.trim())) {
+                marcarError(correo, 'Ingresa un correo electrónico válido (ej: usuario@dominio.com).');
+                valido = false;
+            }
+
+            if (!mensaje.value.trim()) {
+                marcarError(mensaje, 'El mensaje es obligatorio.');
+                valido = false;
+            }
+
+            if (!valido) {
+                e.preventDefault();
+                var primerError = document.querySelector('.campo-invalido');
+                if (primerError) primerError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+
+            /* En desarrollo local Netlify no procesa el POST → usar mailto */
+            var esLocal = ['localhost', '127.0.0.1', ''].includes(window.location.hostname);
+            if (esLocal) {
+                e.preventDefault();
+                var asunto = encodeURIComponent(
+                    'Contacto de ' + nombre.value.trim() + ' ' + apellido.value.trim()
+                );
+                var cuerpo = encodeURIComponent(
+                    'Nombre: ' + nombre.value.trim() + ' ' + apellido.value.trim() + '\n' +
+                    'Correo: ' + correo.value.trim() + '\n\n' +
+                    'Mensaje:\n' + mensaje.value.trim()
+                );
+                window.location.href = 'mailto:' + CORREO_DESTINO +
+                    '?subject=' + asunto + '&body=' + cuerpo;
+            }
+            /* En Netlify: el POST se envía normalmente y Netlify redirige a ?exito=1 */
+        });
+    })();
+</script>
+{{ end }}

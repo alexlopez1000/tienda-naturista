@@ -1,36 +1,30 @@
 ---
-title: "GHK-Cu 50 mg — Aesthetic & Regenerative Research Peptide"
+title: "GHK-Cu 50 mg — Péptido de Investigación Estética y Regenerativa"
 price: 320000
 image: "/images/ghk-qu.webp"
-description: "GHK-Cu 50 mg is a copper-binding research peptide complex studied for its role in skin remodeling, extracellular matrix regulation, collagen synthesis signaling, wound-healing p..."
+description: "GHK-Cu 50 mg es un complejo peptídico de unión al cobre para investigación, estudiado por su papel en la remodelación de la piel, regulación de la matriz extracelular, señalización de la síntesis de colágeno, vías de cicatrización, defensa antioxidante y modelos de tejido regenerativo."
 ---
 
-GHK-Cu 50 mg is a copper-binding research peptide complex studied for its role in skin remodeling, extracellular matrix regulation, collagen synthesis signaling, wound-healing pathways, antioxidant defense, and regenerative tissue models.
+GHK-Cu 50 mg es un complejo peptídico de unión al cobre para investigación, estudiado por su papel en la remodelación de la piel, regulación de la matriz extracelular, señalización de la síntesis de colágeno, vías de cicatrización, defensa antioxidante y modelos de tejido regenerativo.
 
-GHK-Cu is a naturally occurring tripeptide complex composed of glycyl-L-histidyl-L-lysine bound to copper, commonly investigated in aesthetic, dermatological, and regenerative research due to its interaction with biological processes related to tissue repair and structural protein regulation.
+GHK-Cu es un complejo tripeptídico de origen natural compuesto por glicil-L-histidil-L-lisina unida al cobre, comúnmente investigado en investigación estética, dermatológica y regenerativa debido a su interacción con procesos biológicos relacionados con la reparación tisular y la regulación de proteínas estructurales.
 
-Research models have explored GHK-Cu for its potential involvement in:
+Los modelos de investigación han explorado GHK-Cu por su posible participación en:
 
-- collagen and elastin-associated pathways
+- vías asociadas al colágeno y la elastina
+- actividad de fibroblastos
+- remodelación de la matriz extracelular
+- señalización de cicatrización
+- modelos de calidad de la piel y regeneración tisular
+- modulación del estrés oxidativo
+- vías de investigación relacionadas con el folículo piloso y el cuero cabelludo
 
-- fibroblast activity
+Formato del producto: Péptido liofilizado
+Concentración: 50 mg
+Categoría: Investigación Estética / Regenerativa
+Sistema peptídico: GHK-Cu
+Uso: Solo para uso en investigación
 
-- extracellular matrix remodeling
+Synthera Labs presenta GHK-Cu como parte de su línea de investigación estética y regenerativa, respaldado por abastecimiento global de materias primas, revisión de documentación analítica, estándares de procesamiento, trazabilidad por lote y verificación vinculada a código QR.
 
-- wound-healing signaling
-
-- skin quality and tissue regeneration models
-
-- oxidative stress modulation
-
-- hair follicle and scalp-related research pathways
-
-Synthera Labs presents GHK-Cu as part of its aesthetic and regenerative research line, supported by global raw material sourcing, analytical documentation review, downstream processing standards, batch traceability, and QR-linked verification.
-
-Product format: Lyophilized peptide
-Concentration: 50 mg
-Category: Aesthetic / Regenerative Research
-Peptide system: GHK-Cu
-Use: Research use only
-
-Disclaimer: This product is intended for laboratory research purposes only. Not for human consumption, diagnostic use, therapeutic use, or clinical application.
+Aviso: Este producto está destinado exclusivamente a fines de investigación en laboratorio. No apto para consumo humano, uso diagnóstico, terapéutico ni aplicación clínica.
