@@ -1,3 +1,16 @@
+:root {
+    --btn-primary:       #10b981;
+    --btn-primary-hover: #059669;
+    --btn-primary-glow:  rgba(16, 185, 129, 0.35);
+    --btn-whatsapp:      #25D366;
+    --btn-whatsapp-hover:#1ebe5d;
+    --btn-radius:        10px;
+    --btn-padding:       13px 28px;
+    --btn-font-size:     15px;
+    --btn-font-weight:   600;
+    --btn-transition:    all 0.25s ease;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +33,16 @@ body {
     background: #03050c;
     color: #e2e8f0;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
 }
 
 header {
@@ -28,14 +51,19 @@ header {
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px 20px 20px;
     position: sticky;
     top: 0;
     z-index: 999;
     transition: background 0.3s;
+}
+
+.header-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 20px 20px;
 }
 
 .logo {
@@ -94,7 +122,18 @@ nav a.nav-activo:hover {
         url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: white;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-text {
+    max-width: 1300px;
+    width: 100%;
+    padding: 0 40px;
 }
 
 .hero h1 {
@@ -108,12 +147,15 @@ nav a.nav-activo:hover {
 }
 
 .hero button {
-    background: #4caf50;
+    background: var(--btn-primary);
     color: white;
     border: none;
-    padding: 15px 30px;
-    border-radius: 8px;
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
     cursor: pointer;
+    transition: var(--btn-transition);
 }
 
 #productos {
@@ -178,14 +220,15 @@ nav a.nav-activo:hover {
 .card button {
     margin: 15px;
     width: calc(100% - 30px);
-    padding: 12px;
+    padding: 13px;
     border: none;
-    background: #10b981;
+    background: var(--btn-primary);
     color: white;
-    border-radius: 8px;
+    border-radius: var(--btn-radius);
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    transition: var(--btn-transition);
 }
 
 .card button:hover {
@@ -221,7 +264,7 @@ footer {
 
 @media(max-width:768px) {
 
-    header {
+    .header-inner {
         flex-direction: column;
         gap: 15px;
     }
@@ -271,20 +314,23 @@ footer {
 .btn-comprar {
     display: block;
     margin: 15px;
-    padding: 12px;
+    padding: 13px;
     text-align: center;
     text-decoration: none;
-    background: #10b981;
-    color: white;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: .3s;
+    background: transparent;
+    color: var(--btn-primary);
+    border: 2px solid var(--btn-primary);
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    transition: var(--btn-transition);
 }
 
 .btn-comprar:hover {
-    background: #059669;
+    background: rgba(16, 185, 129, 0.12);
+    color: white;
+    border-color: var(--btn-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
 }
 
 .card .btn-comprar,
@@ -292,50 +338,49 @@ footer {
     display: block;
     width: calc(100% - 30px);
     margin: 15px;
-    padding: 12px;
+    padding: 13px;
     text-align: center;
     text-decoration: none;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
     cursor: pointer;
-    transition: all 0.3s;
+    transition: var(--btn-transition);
 }
 
+/* Ghost — acción secundaria */
 .card .btn-comprar {
-    border-color: rgba(139, 195, 74, 0.65);
-    background: rgba(139, 195, 74, 0.12);
-    color: #8bc34a;
-    box-shadow: none;
+    background: transparent;
+    border-color: var(--btn-primary);
+    color: var(--btn-primary);
 }
 
+/* Primario — acción principal */
 .card .btn-agregar-carrito {
-    border-color: #8bc34a;
-    background: #43a047;
+    background: var(--btn-primary);
+    border-color: transparent;
     color: #ffffff;
-    box-shadow: 0 6px 16px rgba(67, 160, 71, 0.28);
+    box-shadow: 0 4px 14px var(--btn-primary-glow);
 }
 
 .card .btn-comprar:hover {
-    background: rgba(139, 195, 74, 0.2);
-    border-color: #8bc34a;
-    color: #ffffff;
+    background: rgba(16, 185, 129, 0.12);
+    border-color: var(--btn-primary-hover);
+    color: white;
     transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(139, 195, 74, 0.18);
 }
 
 .card .btn-agregar-carrito:hover {
-    background: #2e7d32;
-    border-color: #a5d65a;
-    color: #ffffff;
+    background: var(--btn-primary-hover);
+    box-shadow: 0 6px 20px var(--btn-primary-glow);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.38);
 }
 
 .card .btn-comprar:active,
 .card .btn-agregar-carrito:active {
     transform: translateY(0);
+    box-shadow: none;
 }
 
 /* BENEFICIOS */
@@ -441,6 +486,12 @@ footer {
     background-attachment: fixed;
 
     color: white;
+
+    /* Full-bleed sin transform para que background-attachment: fixed funcione */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    left: auto;
+    transform: none;
 }
 
 .hero h1 {
@@ -531,7 +582,7 @@ header {
         will-change: transform;
     }
 
-    header {
+    .header-inner {
         flex-direction: row;
         padding: 12px 20px 12px 10px;
     }
@@ -594,7 +645,7 @@ header {
 .container {
     max-width: 1100px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 .producto-detalle {
@@ -636,35 +687,45 @@ header {
 }
 
 .producto-detalle p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #94a3b8;
+    max-width: 72ch;
 }
 
 .producto-detalle ul {
     margin-top: 15px;
-    padding-left: 25px;
+    padding-left: 22px;
 }
 
 .producto-detalle li {
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #94a3b8;
+    line-height: 1.7;
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     margin-top: 30px;
-    padding: 15px 30px;
-    background: #25D366;
+    padding: var(--btn-padding);
+    background: var(--btn-whatsapp);
     color: white;
     text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: .3s;
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    border: 2px solid transparent;
+    transition: var(--btn-transition);
 }
 
 .btn:hover {
-    transform: translateY(-3px);
+    background: var(--btn-whatsapp-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
 }
 
 /* Botón Volver Flotante */
@@ -730,16 +791,24 @@ header {
 }
 
 .contenido-producto p {
-    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #94a3b8;
+    max-width: 72ch;
+    margin-bottom: 18px;
 }
 
 .contenido-producto ul {
-    margin-top: 15px;
-    padding-left: 25px;
+    margin-top: 12px;
+    padding-left: 22px;
+    margin-bottom: 18px;
 }
 
 .contenido-producto li {
-    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #94a3b8;
+    margin-bottom: 6px;
 }
 
 /* CATÁLOGO DE PRODUCTOS */
@@ -770,16 +839,28 @@ header {
     margin-bottom: 10px;
 }
 
+/* CTA hero — pill grande, variante primaria sólida */
 .hero .btn-comprar {
-    display: inline-block;
-    padding: 18px 40px;
-    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 48px;
+    font-size: 17px;
+    font-weight: var(--btn-font-weight);
     border-radius: 50px;
-    transition: .3s;
+    background: var(--btn-primary);
+    color: white;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: var(--btn-transition);
+    margin: 0;
+    width: auto;
 }
 
 .hero .btn-comprar:hover {
+    background: var(--btn-primary-hover);
     transform: translateY(-3px);
+    box-shadow: 0 8px 28px var(--btn-primary-glow);
 }
 
 /* PAGINACIÓN */
@@ -1093,25 +1174,25 @@ header {
 .btn-checkout {
     width: 100%;
     padding: 14px;
-    background: #25D366;
+    background: var(--btn-whatsapp);
     color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    transition: background 0.3s, transform 0.2s;
+    transition: var(--btn-transition);
     text-decoration: none;
 }
 
 .btn-checkout:hover {
-    background: #128C7E;
+    background: var(--btn-whatsapp-hover);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
 }
 
 .empty-cart-msg {
@@ -1153,26 +1234,27 @@ header {
 }
 
 .btn-agregar-single {
-    background: #43a047;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--btn-primary);
     color: #ffffff;
-    border: 1px solid #8bc34a;
-    border-radius: 8px;
-    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
     cursor: pointer;
-    padding: 15px 30px;
-    font-size: 16px;
-    transition: all 0.3s;
-    display: inline-block;
+    padding: var(--btn-padding);
+    transition: var(--btn-transition);
     text-decoration: none;
-    box-shadow: 0 6px 16px rgba(67, 160, 71, 0.28);
+    box-shadow: 0 4px 14px var(--btn-primary-glow);
 }
 
 .btn-agregar-single:hover {
-    background: #2e7d32;
-    border-color: #a5d65a;
+    background: var(--btn-primary-hover);
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.38);
+    box-shadow: 0 6px 20px var(--btn-primary-glow);
 }
 
 @media (min-width: 1025px) {
@@ -1191,8 +1273,7 @@ header {
     }
 
     p,
-    .hero p,
-    .producto-detalle p {
+    .hero p {
         font-size: 20px;
     }
 }
@@ -1219,9 +1300,18 @@ header {
     }
 
     p,
-    .hero p,
-    .producto-detalle p {
+    .hero p {
         font-size: 20px;
+    }
+
+    #productos,
+    .beneficios,
+    .testimonios,
+    .nosotros,
+    .contacto,
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -1238,6 +1328,16 @@ header {
     .testimonios h2,
     .cart-header h2 {
         font-size: 32px;
+    }
+
+    #productos,
+    .beneficios,
+    .testimonios,
+    .nosotros,
+    .contacto,
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -1373,27 +1473,28 @@ header {
 .btn-enviar {
     width: 100%;
     padding: 14px;
-    background: #10b981;
+    background: var(--btn-primary);
     color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 0.06em;
+    border: 2px solid transparent;
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 4px;
-    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    transition: var(--btn-transition);
 }
 
 .btn-enviar:hover {
-    background: #059669;
-    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
-    transform: translateY(-1px);
+    background: var(--btn-primary-hover);
+    box-shadow: 0 6px 20px var(--btn-primary-glow);
+    transform: translateY(-2px);
 }
 
 .btn-enviar:active {
     transform: translateY(0);
+    box-shadow: none;
 }
 
 .btn-enviar:disabled {
@@ -1433,21 +1534,26 @@ header {
 }
 
 .btn-enviar-otro {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 16px;
-    padding: 10px 24px;
-    border: 1px solid rgba(16, 185, 129, 0.5);
-    border-radius: 8px;
-    color: #10b981;
-    font-size: 14px;
-    font-weight: bold;
+    padding: 11px 26px;
+    border: 2px solid var(--btn-primary);
+    border-radius: var(--btn-radius);
+    color: var(--btn-primary);
+    background: transparent;
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
     text-decoration: none;
-    transition: background 0.2s, border-color 0.2s;
+    transition: var(--btn-transition);
 }
 
 .btn-enviar-otro:hover {
-    background: rgba(16, 185, 129, 0.1);
-    border-color: #10b981;
+    background: rgba(16, 185, 129, 0.12);
+    border-color: var(--btn-primary-hover);
+    color: white;
+    transform: translateY(-2px);
 }
 
 /* Estados de validación */
